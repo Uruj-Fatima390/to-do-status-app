@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do">
+            <h1>
+                TODO List
+            </h1>
+            <div class="add">
+                <input type="text" id="input-box" placeholder="What would you like to do?">
+                <button onclick="addTask()">Add</button>
+               
+            </div>
+            <div class="todo-list">
+                <h3>Todo List</h3>
+                <table>
+                    <thead>
+                        <div class="table-div">
+                        <tr class="header-row">
+                            <th class="row-header">List</th>
+                            <th class="row-header-status">Status</th>
+                            <th class ="row-header-close">Close</th>
+                        </tr>
+                    </div>
+                    </thead>
+                    <tbody class="task-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height:100vh; /* viewport height or full height*/
+    background: rgb(240, 248, 245);
+    padding:80px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.to-do{
+    width: 100%;
+    max-width: 440px;
+    /* height: 540px; */
+    height: auto;
+    background: linear-gradient(#40046d,#6b0864 103px, white 30px);
+    margin:50px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+    padding-top: 5px; 
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+}
+.add{
+    border-radius: 10px;
+    background-color: rgb(240, 248, 245);
+    padding-top: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+#input-box {
+    background-color: rgb(240, 248, 245);
+    max-width: 80%;
+    border: none;
+    border-bottom: 2px solid #40046d;
+    padding-bottom: 1px;
+    padding-right: 75px;
+}
+#input-box:focus{
+ outline: none;
+
+}
+/* .add input-box::placeholder{
+    color:rgb(240, 248, 245);
+} */
+.add button {
+    background-color: rgb(219, 44, 13);  /* Set background color to orange */
+    text-align: center;       /* Center text within the button */
+    display: block;           /* Make the button occupy full width */
+    margin: 0 auto;           /* Center the button horizontally */
+    color: white;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+ .todo-list{
+    width: 100%;
+    max-width: 540px;
+    /* height: 220px; */
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(240, 248, 245);
+    margin-top: 10px;
+ }
+ h3{
+    padding: 10px;
+ }
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0; 
+}
+ tr.header-row {
+    background-color: #cccccce6;
+    border: none;
+    width: 100%;
+}
+th.row-header{
+    width: 90%;
+    margin: 0;
+    text-align: start;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 20px;
+}
+.row-header-status{
+    width: 20%;
+    margin: 0;
+    text-align: start;
+    padding: 5px;
+    padding-left: 30px;
+    text-align: start;
+    justify-content: space-between;
+
+}
+.row-header-close{
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 20px;
+    width: 20%;
+    margin: 0;
+    text-align: start;
+    padding-right: 20px;
+}
+.material-icons{
+    color:red
+}
+.task-list{
+    padding:50px;
+    margin-right:50px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    width: 75px;
+    border-radius: 5px;
+    margin:10px;
+}
+i{
+    cursor: pointer;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding-left:20px;
+    padding-right: 5px;
+    text-align: start;
+    border-bottom: 2px solid #cccccce6;
+}
+
+/* Default styles */
+
+/* Adjust styles for screens smaller than 768px (typical mobile phones) */
+@media (max-width: 320px) {
+    /* Your CSS styles for small screens */
+    .container{
+        padding:1px;
+    }
+    .to-do {
+        height: auto;
+        background: linear-gradient(#40046d,#6b0864 85px, white 30px);
+        margin:50px auto 20px;
+        padding:40px 30px 70px;
+        border-radius: 10px;
+        margin: 20px auto 20px;
+        padding: 20px;
+        padding-top: 5px; 
+    }
+    #input-box {
+        max-width: 50%;
+        padding-right: 20px;
+        padding-bottom: 1px;
+    }
+    .add{
+        padding-top: 20px;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .add button {
+        width: 90px;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    #input-box {
+        max-width: 80%;
+    }
+ 
+    th.row-header{
+        width: 70%;
+        padding: 2px;
+        padding-left: 5px;
+    }
+    .row-header-status{
+        width: 20%;
+        padding: 2px;
+        padding-left: 15px;    
+    }
+    .row-header-close{
+        padding: 2px;
+        padding-left: 5px;
+        width: 20%;
+        padding-right: 5px;
+    }
+    button {
+        padding: 1px;
+        width: 68px;
+        border-radius: 3px;
+        margin:5px;
+    }
+    td {
+        padding-left:5px;
+        padding-right: 2px;
+    }
+}
+@media (max-width: 530px) {
+    /* Your CSS styles for small screens */
+    .to-do {
+        max-width: 95%; /* Adjust the maximum width for tablets */
+    }
+    #input-box {
+        max-width: 80%;
+        padding-bottom: 1px;
+        padding-right: 50px;
+    }
+    th.row-header{
+        width: 70%;
+        padding: 2px;
+        padding-left: 5px;
+    }
+    .row-header-status{
+        width: 20%;
+        padding: 2px;
+        padding-left: 15px;    
+    }
+    .row-header-close{
+        padding: 2px;
+        padding-left: 5px;
+        width: 20%;
+        padding-right: 5px;
+    }
+    td {
+        padding-left:5px;
+        padding-right: 2px;
+    }
+    button {
+        padding: 1px;
+        width: 68px;
+        border-radius: 3px;
+        margin:5px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Your CSS styles for small screens */
+    .to-do {
+        max-width: 95%; /* Adjust the maximum width for tablets */
+    }
+    button {
+        padding: 1px;
+        width: 68px;
+        border-radius: 3px;
+        margin:5px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .to-do {
+        max-width: 70%; /* Adjust the maximum width for tablets */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .to-do {
+        max-width: 50%; /* Adjust the maximum width for desktops */
+    }
+}
